@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-02 08:19:39 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTAyOzA3OjM4OjE4IFBNOzMwMjU="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTAyOzA4OjE5OjM5IFBNOzE7MzEzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="yourname" type="String" array="False" size=""/>
+            <declare name="yourfriendname" type="String" array="False" size=""/>
+            <declare name="anotheroneofyourfriendname" type="String" array="False" size=""/>
+            <declare name="totalreceivedamountforcompletedajob" type="Real" array="False" size=""/>
+            <declare name="totalpersonofcompletedajob" type="Integer" array="False" size=""/>
+            <declare name="receivedamountperperson" type="Real" array="False" size=""/>
+            <input variable="yourname"/>
+            <input variable="yourfriendname"/>
+            <input variable="anotheroneofyourfriendname"/>
+            <input variable="totalpersonofcompletedajob"/>
+            <input variable="totalreceivedamountforcompletedajob"/>
+            <assign variable="receivedamountperperson" expression="totalreceivedamountforcompletedajob/totalpersonofcompletedajob"/>
+            <output expression="&quot; your name &quot; &amp;yourname" newline="True"/>
+            <output expression="&quot; Your friend name &quot; &amp;yourfriendname" newline="True"/>
+            <output expression="&quot; The another one of your friend name &quot; &amp;anotheroneofyourfriendname" newline="True"/>
+            <output expression="&quot; The received amount per person &quot; &amp;receivedamountperperson" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

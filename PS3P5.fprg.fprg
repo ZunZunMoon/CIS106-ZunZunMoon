@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-02 10:43:40 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTAyOzEwOjE1OjUyIFBNOzMwMTI="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTAyOzEwOjQzOjQwIFBNOzE7MzExOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radiusofcircle" type="String" array="False" size=""/>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <declare name="pie" type="Real" array="False" size=""/>
+            <declare name="radiussquared" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="perimeter" type="Real" array="False" size=""/>
+            <input variable="radius"/>
+            <input variable="pie"/>
+            <assign variable="perimeter" expression="2 * pie * radius"/>
+            <assign variable="area" expression="pie * radius * radius"/>
+            <output expression="&quot; The are of the circke is pie times radius squared &quot; &amp;area" newline="True"/>
+            <output expression="&quot; The perimeter of circle (2time pie * radius) &quot; &amp;perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
