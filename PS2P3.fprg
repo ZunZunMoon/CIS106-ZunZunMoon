@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-25 09:39:14 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAyLTI0OzExOjA1OjAxIFBNOzMwMDk="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAyLTI1OzA5OjM5OjE0IFBNOzE7MzEzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rectangle" type="String" array="False" size=""/>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="circumference" type="Real" array="False" size=""/>
+            <input variable="length"/>
+            <input variable="Width"/>
+            <assign variable="area" expression="( length * width )"/>
+            <output expression="&quot;the area is centimetersquare&quot; &amp;area" newline="True"/>
+            <assign variable="circumference" expression="( 2 * length + 2 * width )"/>
+            <output expression="&quot;Th circumference is centimeters&quot; &amp;circumference" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-23 09:35:35 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAyLTIzOzA4OjU0OjExIFBNOzMwMTk="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAyLTIzOzA5OjM1OjM1IFBNOzE7MzEzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="QTY" type="Real" array="False" size=""/>
+            <declare name="Unitprice" type="Real" array="False" size=""/>
+            <declare name="extprice" type="Real" array="False" size=""/>
+            <input variable="QTY"/>
+            <input variable="Unitprice"/>
+            <assign variable="extprice" expression="QTY * unitprice"/>
+            <output expression="&quot;your extended price is $&quot; &amp;extprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

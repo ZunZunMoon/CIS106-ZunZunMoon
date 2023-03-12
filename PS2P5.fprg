@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-25 11:18:23 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAyLTI1OzEwOjIyOjQzIFBNOzMwMTQ="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAyLTI1OzExOjE4OjIzIFBNOzE7MzEyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Integer" array="False" size=""/>
+            <declare name="totaldiscount" type="Real" array="False" size=""/>
+            <declare name="unitprice" type="Real" array="False" size=""/>
+            <declare name="discountpercent" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="discounttotal" type="Real" array="False" size=""/>
+            <input variable="unitprice"/>
+            <input variable="qty"/>
+            <input variable="discountpercent"/>
+            <assign variable="total" expression="qty * unitprice"/>
+            <output expression="&quot;the totalprice is $&quot; &amp;total" newline="True"/>
+            <assign variable="discounttotal" expression="total - ( total * discountpercent/100 )"/>
+            <output expression="&quot; the discounttotal is $&quot; &amp;discounttotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

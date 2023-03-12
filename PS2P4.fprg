@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-25 10:21:44 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAyLTI1OzA5OjQ3OjIwIFBNOzMwMjQ="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAyLTI1OzEwOjIxOjQ0IFBNOzE7MzEyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="crdstaken" type="Integer" array="False" size=""/>
+            <declare name="labfee" type="Integer" array="False" size=""/>
+            <declare name="tution" type="Real" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="crdstaken"/>
+            <assign variable="tution" expression="( 250 * crdstaken +100 )"/>
+            <output expression="&quot;lastname and tution $&quot; &amp;tution" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
