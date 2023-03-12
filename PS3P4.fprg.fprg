@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-02 10:15:45 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTAyOzA4OjE5OjQ3IFBNOzMwMjc="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTAyOzEwOjE1OjQ1IFBNOzE7MzEyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="carcompanyormake" type="String" array="False" size=""/>
+            <declare name="model" type="String" array="False" size=""/>
+            <declare name="msrpamount" type="Real" array="False" size=""/>
+            <declare name="discountpercent" type="Real" array="False" size=""/>
+            <declare name="amountoffmsrp" type="Real" array="False" size=""/>
+            <declare name="discountedprice" type="Real" array="False" size=""/>
+            <input variable="carcompanyormake"/>
+            <input variable="model"/>
+            <input variable="msrpamount"/>
+            <input variable="discountpercent"/>
+            <assign variable="amountoffmsrp" expression="msrpamount * discountpercent"/>
+            <assign variable="discountedprice" expression="msrpamount - ( msrpamount * discountpercent )"/>
+            <output expression="&quot; Car company name or make &quot; &amp;carcompanyormake" newline="True"/>
+            <output expression="&quot; Car model &quot; &amp;model" newline="True"/>
+            <output expression="&quot; The msrp amount &quot; &amp;msrpamount" newline="True"/>
+            <output expression="&quot; enter decimal number for dicount percent &quot; &amp;discountpercent" newline="True"/>
+            <output expression="&quot; The amount off msrp &quot; &amp;amountoffmsrp" newline="True"/>
+            <output expression="&quot; The discounted price &quot; &amp;discountedprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
