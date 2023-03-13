@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-11 09:38:16 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTExOzA3OjE0OjExIFBNOzMwMTI="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTExOzA5OjM4OjE2IFBNOzE7MzEzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totalcostforameal" type="Real" array="False" size=""/>
+            <declare name="tipforamealwith15percent" type="Real" array="False" size=""/>
+            <declare name="tipforamealwith18percent" type="Real" array="False" size=""/>
+            <declare name="tipforamealwith20percent" type="Real" array="False" size=""/>
+            <declare name="totalcostforamealwitheachtip" type="Real" array="False" size=""/>
+            <declare name="totalcostforamealwith15percenttip" type="Real" array="False" size=""/>
+            <declare name="totalcostforamealwith18percenttip" type="Real" array="False" size=""/>
+            <declare name="totalcostforamealwith20percenttip" type="Real" array="False" size=""/>
+            <input variable="totalcostforameal"/>
+            <assign variable="tipforamealwith15percent" expression="(totalcostforameal * 15/100)"/>
+            <assign variable="totalcostforamealwith15percenttip" expression="totalcostforameal + tipforamealwith15percent"/>
+            <assign variable="tipforamealwith18percent" expression="(totalcostforameal * 18/100)"/>
+            <assign variable="totalcostforamealwith18percenttip" expression="totalcostforameal + tipforamealwith18percent"/>
+            <assign variable="tipforamealwith20percent" expression="(totalcostforameal * 20/100)"/>
+            <assign variable="totalcostforamealwith20percenttip" expression="totalcostforameal + tipforamealwith20percent"/>
+            <output expression="&quot;The totl cost for a meal is $ &quot; &amp;totalcostforameal" newline="True"/>
+            <output expression="&quot; The 15percent of tip is $ &quot; &amp;tipforamealwith15percent" newline="True"/>
+            <output expression="&quot;The total of a meal included with tip is $ &quot; &amp;totalcostforamealwith15percenttip" newline="True"/>
+            <output expression="&quot;The total cost for a meal is $ &quot; &amp;totalcostforameal" newline="True"/>
+            <output expression="&quot; The 18percent of tip is $ &quot; &amp;tipforamealwith18percent" newline="True"/>
+            <output expression="&quot;The total of a meal included with tip is $ &quot; &amp;totalcostforamealwith18percenttip" newline="True"/>
+            <output expression="&quot;The total cost for a meal is $ &quot; &amp;totalcostforameal" newline="True"/>
+            <output expression="&quot; The 20percent of tip is $ &quot; &amp;tipforamealwith20percent" newline="True"/>
+            <output expression="&quot;The total of a meal included with tip is $ &quot; &amp;totalcostforamealwith20percenttip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
