@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-18 04:27:02 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE4OzAzOjUxOjE4IFBNOzMwMjM="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE4OzA0OjI3OjAyIFBNOzI7MzEyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="unitprice" type="Real" array="False" size=""/>
+            <declare name="extprice" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="qty"/>
+            <if expression="qty &gt;=1000">
+                <then>
+                    <assign variable="unitprice" expression="3.00"/>
+                </then>
+                <else>
+                    <assign variable="unitprice" expression="5.00"/>
+                </else>
+            </if>
+            <assign variable="extprice" expression="qty * unitprice"/>
+            <assign variable="tax" expression="extprice * 0.07"/>
+            <assign variable="total" expression="extprice + tax"/>
+            <output expression="&quot;Quantity Ordered&quot;  &amp;qty" newline="True"/>
+            <output expression="&quot;Unit Price $ &quot; &amp;unitprice" newline="True"/>
+            <output expression="&quot;Extended Price is $ &quot; &amp;extprice" newline="True"/>
+            <output expression="&quot;Tax is $ &quot; &amp;tax" newline="True"/>
+            <output expression="&quot;Total Order $ &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
