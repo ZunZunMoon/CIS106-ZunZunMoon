@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-18 10:51:25 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE4OzA3OjEzOjE3IFBNOzMwMjQ="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE4OzEwOjUxOjI1IFBNOzc7MzEzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="item" type="String" array="False" size=""/>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="unprice" type="Real" array="False" size=""/>
+            <declare name="extprice" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter item (A or B)&quot;" newline="True"/>
+            <input variable="item"/>
+            <output expression="&quot;Enter quantity ordered&quot;" newline="True"/>
+            <input variable="qty"/>
+            <if expression="item = &quot;A&quot;">
+                <then>
+                    <assign variable="unprice" expression="10.00"/>
+                </then>
+                <else>
+                    <assign variable="unprice" expression="20.00"/>
+                </else>
+            </if>
+            <assign variable="extprice" expression="qty * unprice"/>
+            <output expression="&quot;The item is &quot; &amp;item" newline="True"/>
+            <output expression="&quot;The unit price is $ &quot; &amp;unprice" newline="True"/>
+            <output expression="&quot;The extened price is $ &quot; &amp;extprice" newline="True"/>
+        </body>
+    </function>
+    <function name="computeextprice" type="Real" variable="extprice">
+        <parameters>
+            <parameter name="qty" type="Real" array="False"/>
+            <parameter name="unprice" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="extprice" type="Real" array="False" size=""/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-19 12:45:18 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE5OzEyOjM2OjUzIFBNOzMwMjY="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE5OzEyOjM3OjIwIFBNOzM7WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE4OzAzOjUxOjE4IFBNO1BTNVAxLmZwcmc7NzA5NA=="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE5OzEyOjQwOjQ0IFBNOzE0O1p1blp1bjtERVNLVE9QLUVDUFRITUw7MjAyMy0wMy0xODsxMToxNToxNCBQTTtQUzVQNC5mcHJnOzcxNDI="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE5OzEyOjQ1OjE4IFBNOzE7MzEzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="costofApp" type="Real" array="False" size=""/>
+            <declare name="costofWat" type="Real" array="False" size=""/>
+            <declare name="costofOrder" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="name"/>
+            <output expression="&quot;Enter your name &quot; &amp;name" newline="True"/>
+            <input variable="costofApp"/>
+            <output expression="&quot;Enter cost of appliance $ &quot; &amp;costofApp" newline="True"/>
+            <if expression="costofApp &gt;1000">
+                <then>
+                    <assign variable="costofWat" expression="costofApp * 0.10"/>
+                </then>
+                <else>
+                    <assign variable="costofWat" expression="costofApp * 0.05"/>
+                </else>
+            </if>
+            <assign variable="total" expression="costofApp + costofWat"/>
+            <output expression="&quot;Enter your name &quot; &amp;name" newline="True"/>
+            <output expression="&quot;The cost of warrantee is &quot; &amp;costofwat" newline="True"/>
+            <output expression="&quot;The total is $ &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

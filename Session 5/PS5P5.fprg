@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-19 03:14:14 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE5OzAyOjUxOjA0IFBNOzMwMTg="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE5OzAyOjU2OjE4IFBNOzU7WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE5OzAyOjI5OjIxIFBNOzYyMjE="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTE5OzAzOjE0OjE0IFBNOzM7MzEyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lname" type="String" array="False" size=""/>
+            <declare name="Nofdependents" type="Integer" array="False" size=""/>
+            <declare name="GIncome" type="Real" array="False" size=""/>
+            <declare name="taxrate" type="Real" array="False" size=""/>
+            <declare name="AdjGIncome" type="Real" array="False" size=""/>
+            <declare name="ICtax" type="Real" array="False" size=""/>
+            <input variable="lname"/>
+            <output expression="&quot;your last name &quot; &amp;lname" newline="True"/>
+            <input variable="NofDependents"/>
+            <output expression="&quot;Enter number of dependents &quot; &amp;Nofdependents" newline="True"/>
+            <input variable="GIncome"/>
+            <if expression="GIncome &gt;50000.00">
+                <then>
+                    <assign variable="taxrate" expression="GIncome * 0.20"/>
+                </then>
+                <else>
+                    <assign variable="taxrate" expression="GIncome * 0.10"/>
+                </else>
+            </if>
+            <assign variable="AdjGIncome" expression="GIncome - (NofDependents * 12000.00)"/>
+            <assign variable="ICtax" expression="computeICtax (AdjGIncome, taxrate)"/>
+            <if expression="ICtax &lt; 0.00">
+                <then>
+                    <assign variable="ICtax" expression="100.00"/>
+                </then>
+                <else>
+                    <assign variable="ICtax" expression="AdjGIncome * 0.10"/>
+                </else>
+            </if>
+            <output expression="&quot;The last name is &quot; &amp;lname" newline="True"/>
+            <output expression="&quot;The gross income is &quot; &amp;GIncome" newline="True"/>
+            <output expression="&quot;The number of dependents is &quot; &amp;NofDependents" newline="True"/>
+            <output expression="&quot;The adjusted gross income is &quot; &amp;AdjGIncome" newline="True"/>
+            <output expression="&quot;The income tax is $ &quot; &amp;ICtax" newline="True"/>
+        </body>
+    </function>
+    <function name="computeICtax" type="Real" variable="ICtax">
+        <parameters>
+            <parameter name="AdjGIncome" type="Real" array="False"/>
+            <parameter name="taxrate" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ICtax" type="Real" array="False" size=""/>
+            <assign variable="ICtax" expression="AdjGIncome * taxrate"/>
+        </body>
+    </function>
+</flowgorithm>
