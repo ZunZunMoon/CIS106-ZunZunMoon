@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 08:13:54 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTA5OzA3OjQ1OjQ5IFBNOzMwMzQ="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTA5OzA4OjEzOjU0IFBNOzE7MzEzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstexamscore" type="Real" array="False" size=""/>
+            <declare name="secondexamscore" type="Real" array="False" size=""/>
+            <declare name="thefirstexamworth" type="Real" array="False" size=""/>
+            <declare name="thesecondexamworth" type="Real" array="False" size=""/>
+            <declare name="totalexamscore" type="Real" array="False" size=""/>
+            <input variable="firstexamscore"/>
+            <input variable="secondexamscore"/>
+            <assign variable="totalexamscore" expression="firstexamscore * 60/100 + secondexamscore * 40/100"/>
+            <output expression="&quot;The total exam sore&quot; &amp;totalexamscore" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-12 10:38:46 AM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTExOzA5OjQ1OjE3IFBNOzMwMjQ="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTEyOzEwOjM4OjQ2IEFNOzQ7MzExNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Firstname" type="String" array="False" size=""/>
+            <declare name="numberofsteps" type="Integer" array="False" size=""/>
+            <declare name="totalburnedcalories" type="Real" array="False" size=""/>
+            <declare name="eachstepburnedcalories" type="Real" array="False" size=""/>
+            <input variable="Firstname"/>
+            <input variable="numberofsteps"/>
+            <input variable="eachstepburnedcalories"/>
+            <assign variable="totalburnedcalories" expression="numberofsteps * eachstepburnedcalories"/>
+            <output expression="&quot;First name : &quot;  &amp;firstname" newline="True"/>
+            <output expression="&quot; The total burned calories &quot; &amp;totalburnedcalories" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

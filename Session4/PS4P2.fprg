@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-10 10:42:46 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTA5OzA4OjE0OjAxIFBNOzMwMTk="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTEwOzEwOjQyOjQ2IFBNOzE7MzEyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="purchasepricepershare" type="Real" array="False" size=""/>
+            <declare name="thecurrentstockprice" type="Real" array="False" size=""/>
+            <declare name="qtyofstock" type="Real" array="False" size=""/>
+            <declare name="thevalueofthestock" type="Real" array="False" size=""/>
+            <input variable="purchasepricepershare"/>
+            <input variable="thecurrentstockprice"/>
+            <input variable="qtyofstock"/>
+            <assign variable="thevalueofthestock" expression="(thecurrentstockprice - purchasepricepershare) * qtyofstock"/>
+            <output expression="&quot;The value of the stock price is&quot; &amp;thevalueofthestock" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
