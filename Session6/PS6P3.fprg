@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-25 08:59:52 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTI1OzA3OjM3OjI2IFBNOzMwMjg="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTI1OzA4OjU5OjUyIFBNOzE7MzE0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="principleamount" type="Real" array="False" size=""/>
+            <declare name="interestrate" type="Real" array="False" size=""/>
+            <declare name="yearstomaturity" type="String" array="False" size=""/>
+            <declare name="FYinterestamount" type="Real" array="False" size=""/>
+            <input variable="principleamount"/>
+            <input variable="yearstomaturity"/>
+            <if expression="yearstomaturity = &quot;5&quot; and principleamount &gt; 100000">
+                <then>
+                    <assign variable="interestrate" expression="0.06"/>
+                </then>
+                <else>
+                    <if expression="yearstomaturity = &quot;10&quot; and principleamount &gt; 50000">
+                        <then>
+                            <assign variable="interestrate" expression="0.05"/>
+                        </then>
+                        <else>
+                            <if expression="yearstomaturity = &quot;5&quot; and principleamount &gt; 50000">
+                                <then>
+                                    <assign variable="interestrate" expression="0.04"/>
+                                </then>
+                                <else>
+                                    <assign variable="interestrate" expression="0.02"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="FYinterestamount" expression="principleamount * interestrate"/>
+            <output expression="&quot;The principle amount is $    &quot; &amp;principleamount" newline="True"/>
+            <output expression="&quot;The interest rate is     &quot; &amp;interestrate" newline="True"/>
+            <output expression="&quot;The interest amount for first year is    &quot; &amp;FYinterestamount" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-25 09:31:56 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTI1OzA5OjA5OjM5IFBNOzMwMzM="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTI1OzA5OjMxOjU2IFBNOzE7MzEzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NOtickets" type="Integer" array="False" size=""/>
+            <declare name="Ppticket" type="Real" array="False" size=""/>
+            <declare name="totalC" type="Real" array="False" size=""/>
+            <input variable="NOtickets"/>
+            <if expression="NOtickets &gt;= 25">
+                <then>
+                    <assign variable="Ppticket" expression="50"/>
+                </then>
+                <else>
+                    <if expression="NOtickets &gt;= 10">
+                        <then>
+                            <assign variable="Ppticket" expression="60"/>
+                        </then>
+                        <else>
+                            <if expression="NOtickets &gt;= 5">
+                                <then>
+                                    <assign variable="Ppticket" expression="70"/>
+                                </then>
+                                <else>
+                                    <assign variable="Ppticket" expression="75"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="totalC" expression="NOtickets * Ppticket"/>
+            <output expression="&quot;The numberof tickets :    &quot; &amp;NOtickets" newline="True"/>
+            <output expression="&quot;The price per ticket :$   &quot; &amp;Ppticket" newline="True"/>
+            <output expression="&quot;The total cost :$  &quot; &amp;totalC" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
