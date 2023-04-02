@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ZunZun"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-02 02:55:40 PM"/>
+        <attribute name="created" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTA0LTAxOzExOjI4OjM1IFBNOzMwMTg="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTA0LTAyOzAxOjQ2OjIyIFBNOzI7WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTAzLTMxOzA4OjIzOjQwIFBNO1BTN1A1LmZwcmc7NzA4Ng=="/>
+        <attribute name="edited" value="WnVuWnVuO0RFU0tUT1AtRUNQVEhNTDsyMDIzLTA0LTAyOzAyOjU1OjQwIFBNOzM7MzEyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="startvalue" type="Real" array="False" size=""/>
+            <declare name="stopvalue" type="Real" array="False" size=""/>
+            <declare name="Incrv" type="Real" array="False" size=""/>
+            <declare name="response" type="String" array="False" size=""/>
+            <input variable="startvalue"/>
+            <input variable="stopvalue"/>
+            <input variable="Incrv"/>
+            <while expression="startvalue &lt;= stopvalue">
+                <assign variable="startvalue" expression="startvalue + Incrv"/>
+                <output expression="&quot;loop- start value&quot; &amp;startvalue" newline="True"/>
+                <output expression="&quot;Loop - stopvalue &quot; &amp;stopvalue" newline="True"/>
+                <output expression="&quot;loop- Incrv &quot; &amp;Incrv" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
